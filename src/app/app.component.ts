@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reuseable-components';
+  post = {
+    title: 'Title',
+    isFavorite: true
+  };
+
+  onFavoriteChanged(eventArgs) {
+    console.log('Favorite Changed:', eventArgs);
+  }
 }
